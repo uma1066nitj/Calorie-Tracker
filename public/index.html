@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calorie Tracker</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Calorie Tracker</h1>
+        <div id="user-info">
+            <span id="username"></span>
+            <button id="logout">Logout</button>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Food Entry</h2>
+            <form id="food-form">
+                <input type="date" id="date" required />
+                <input type="text" id="foodName" placeholder="Food Name" required />
+                <input type="number" id="quantity" placeholder="Quantity" required />
+                <input type="number" id="calories" placeholder="Calories per Unit" required />
+                <button type="submit">Add Entry</button>
+            </form>
+        </section>
+        <section id="calorie-display">
+            <h2>Daily Calorie Intake</h2>
+            <table id="calorie-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Food</th>
+                        <th>Quantity</th>
+                        <th>Calories</th>
+                    </tr>
+                </thead>
+                <tbody id="entries"></tbody>
+            </table>
+            <div id="total-calories-display">
+                <p>Total Calories: <span id="total-calories-value">0</span></p>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Calorie Tracker</p>
+        <p>&copy; Made with by <span style="font-size:200%;color:red;">♥</span>Uma Shankar</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

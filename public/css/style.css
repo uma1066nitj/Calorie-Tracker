@@ -1,0 +1,197 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    /* Light gray background */
+    color: #333;
+    /* Dark gray text */
+    line-height: 1.6;
+}
+
+/* General header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* User info container */
+#user-info {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Username text */
+#username {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+/* User icon */
+#user-info::before {
+    content: '\1F464';
+    /* Unicode for user icon */
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Logout button (hidden by default) */
+#logout {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: white;
+    color: #4CAF50;
+    border: 1px solid #4CAF50;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    white-space: nowrap;
+}
+
+/* Hover effect to show logout button */
+#user-info:hover #logout {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Logout button hover effect */
+#logout:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    /* Use flexbox for layout */
+    flex-wrap: wrap;
+    /* Allow sections to wrap on smaller screens */
+    justify-content: space-around;
+    /* Distribute space evenly */
+}
+
+section {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 45%;
+    /* Adjust width as needed */
+    min-width: 300px;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.2rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Form Styles */
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"] {
+    width: calc(100% - 22px);
+    /* Full width minus padding and border */
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Include padding and border in element's total width and height */
+}
+
+form button {
+    background-color: #007bff;
+    /* Blue button */
+    color: white;
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #288743;
+}
+
+/* Calorie Display Styles */
+#calorie-entries {
+    margin-top: 1rem;
+}
+
+.calorie-entry {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#total-calories {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+#calorie-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#calorie-table th,
+#calorie-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Optional: Add hover effect */
+#calorie-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Responsive Design (Example) */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        /* Stack sections vertically */
+        align-items: center;
+    }
+
+    section {
+        width: 90%;
+        /* Make sections wider on smaller screens */
+    }
+}
