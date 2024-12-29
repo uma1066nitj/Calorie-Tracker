@@ -3,6 +3,15 @@
 Welcome to the **Calorie Tracker** web application! This project is designed to help users manage their daily food intake and monitor calorie consumption in a simple and user-friendly way. Built with modern web technologies, this tool ensures both functionality and scalability. 🚀
 
 ---
+## Signup Page
+![Signup Page](assests/screenshot/Signup_Page.png)
+
+## Login Page
+![Login Page](assests/screenshot/Login_Page.png)
+
+## Project Interface
+![Project Interface](assests/screenshot/Project_Interface.png)
+
 
 ## 🎯 Features
 
