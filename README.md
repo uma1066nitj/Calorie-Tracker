@@ -4,13 +4,13 @@ Welcome to the **Calorie Tracker** web application! This project is designed to 
 
 ---
 ## Signup Page
-![Signup Page](assests/screenshot/Signup_Page.png)
+![Signup Page](https://github.com/uma1066nitj/Calorie-Tracker/blob/master/assests/screenshot/Signup_Page.png)
 
 ## Login Page
-![Login Page](assests/screenshot/Login_Page.png)
+![Login Page](https://github.com/uma1066nitj/Calorie-Tracker/blob/master/assests/screenshot/Login_Page.png)
 
 ## Project Interface
-![Project Interface](assests/screenshot/Project_Interface.png)
+![Project Interface](https://github.com/uma1066nitj/Calorie-Tracker/blob/master/assests/screenshot/Project_Interface.png)
 
 
 ## 🎯 Features
